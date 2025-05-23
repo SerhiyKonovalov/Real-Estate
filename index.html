@@ -5,8 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<link rel="shortcut icon" href="./assets/img/favicon.ico">
-	<title>Real Estate</title>  <script type="module" crossorigin src="./js/index.min.js?v=1747417111918"></script>
-  <link rel="stylesheet" crossorigin href="./css/index.min.css?v=1747417111918">
+	
+		<meta name="description" content="Site for the portfolio «Real Estate» (template v4)">
+	<title>Real Estate</title>  <script type="module" crossorigin src="./js/index.min.js?v=1747984434145"></script>
+  <link rel="stylesheet" crossorigin href="./css/index.min.css?v=1747984434145">
 </head>
 	<body>
 		<div class="wrapper">
@@ -14,13 +16,13 @@
 		<header data-fls-header="" data-fls-header-scroll="" class="header" data-fls-watcher="">
 	<div class="header__container">
 		<div class="header__logo">
-			<a href="#" data-fls-logo="" class="header__logo-link logo">
+			<a href="#" data-fls-logo="" data-fls-scrollto=".hero" class="header__logo-link logo">
 	<img src="./assets/img/logo.svg" class="logo__icon" alt="Image">
 	<span>Mulih</span>
 </a>
 		</div>
 		<div class="header__menu menu">
-	<button type="button" data-fls-menu="" class="menu__icon icon-menu"><span></span></button>
+	<button type="button" data-fls-menu="" class="menu__icon icon-menu" aria-label="menu icon"><span></span></button>
 	<nav class="menu__body">
 		<ul class="menu__list">
 			
@@ -49,7 +51,7 @@
 </div>
 
 <!-- 
-<fetch url="@components/layout/menu/menu.js?v=1747417111918on">
+<fetch url="@components/layout/menu/menu.js?v=1747984434145on">
 	<each loop='item in response'>
 	</each>
 </fetch>
@@ -64,7 +66,7 @@
 			
 
 <main class="page page--home">
-	<section class="hero" data-fls-watcher="" data-fls-watcher-once="">
+	<section class="hero" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.2">
 		<div class="hero__wrapper">
 			<div class="hero__container">
 				<div class="hero__header-block header-block">
@@ -81,31 +83,31 @@
 					</nav>
 					<div data-fls-tabs-body="" class="filter-search__content">
 						<div class="filter-search__body">
-							<form action="#" method="GET" class="filter-search__form">
+							<form action="#" method="GET" class="filter-search__form" data-fls-select-one="">
 								<div class="filter-search__form-item">
-									<label for="search-location" class="filter-search__label">Location</label>
-									<select name="form[]" id="search-location" class="filter-search__select" data-fls-select="" data-fls-select-modif="form">
+									<label for="search-location-for-buy" class="filter-search__label">Location</label>
+									<select name="form[]" id="search-location-for-buy" class="filter-search__select" data-fls-select="" data-fls-select-modif="form">
 										<option value="1" selected="">Bogor, Jawa Barat</option>
 										<option value="2">Some city №2</option>
 										<option value="3">Some city №3</option>
 										<option value="4">Some city №4</option>
-										<option value="4">Some city №5</option>
-										<option value="4">Some city №6</option>
+										<option value="5">Some city №5</option>
+										<option value="6">Some city №6</option>
 									</select>
 								</div>
 								<div class="filter-search__form-item">
-									<label for="search-type" class="filter-search__label ">Type</label>
-									<select name="form[]" id="search-type" class="filter-search__select " data-fls-select="" data-fls-select-modif="form">
+									<label for="search-type-for-buy" class="filter-search__label ">Type</label>
+									<select name="form[]" id="search-type-for-buy" class="filter-search__select " data-fls-select="" data-fls-select-modif="form">
 										<option value="1" selected="">Home</option>
 										<option value="2">Item №2</option>
 										<option value="3">Item №3</option>
 										<option value="4">Item №4</option>
-										<option value="4">Item №5</option>
+										<option value="5">Item №5</option>
 									</select>
 								</div>
 								<div class="filter-search__form-item">
-									<label for="search-price-range" class="filter-search__label">Price Range</label>
-									<select name="form[]" id="search-price-range" class="filter-search__select" data-fls-select="" data-fls-select-modif="form">
+									<label for="search-price-range-for-buy" class="filter-search__label">Price Range</label>
+									<select name="form[]" id="search-price-range-for-buy" class="filter-search__select" data-fls-select="" data-fls-select-modif="form">
 										<option value="1" selected="">$10000-$15000</option>
 										<option value="2">$15000-$25000</option>
 										<option value="3">$25000-$40000</option>
@@ -118,20 +120,20 @@
 							</form>
 						</div>
 						<div class="filter-search__body">
-							<form action="#" method="GET" class="filter-search__form">
+							<form action="#" method="GET" class="filter-search__form" data-fls-select-one="">
 								<div class="filter-search__form-item">
-									<label for="search-location" class="filter-search__label">Location</label>
-									<select name="form[]" id="search-location" class="filter-search__select" data-fls-select="" data-fls-select-modif="form">
+									<label for="search-location-for-rent" class="filter-search__label">Location</label>
+									<select name="form[]" id="search-location-for-rent" class="filter-search__select" data-fls-select="" data-fls-select-modif="form">
 										<option value="1" selected="">Kyiv, Ukraine</option>
 										<option value="2">Some city №2</option>
 										<option value="3">Some city №3</option>
 										<option value="4">Some city №4</option>
-										<option value="4">Some city №5</option>
+										<option value="5">Some city №5</option>
 									</select>
 								</div>
 								<div class="filter-search__form-item">
-									<label for="search-type" class="filter-search__label">Type</label>
-									<select name="form[]" id="search-type" class="filter-search__select" data-fls-select="" data-fls-select-modif="form">
+									<label for="search-type-for-rent" class="filter-search__label">Type</label>
+									<select name="form[]" id="search-type-for-rent" class="filter-search__select" data-fls-select="" data-fls-select-modif="form">
 										<option value="1" selected="">Home</option>
 										<option value="2">Item №2</option>
 										<option value="3">Item №3</option>
@@ -139,8 +141,8 @@
 									</select>
 								</div>
 								<div class="filter-search__form-item">
-									<label for="search-price-range" class="filter-search__label">Price Range</label>
-									<select name="form[]" id="search-price-range" class="filter-search__select" data-fls-select="" data-fls-select-modif="form">
+									<label for="search-price-range-for-rent" class="filter-search__label">Price Range</label>
+									<select name="form[]" id="search-price-range-for-rent" class="filter-search__select" data-fls-select="" data-fls-select-modif="form">
 										<option value="1" selected="">$200-$350</option>
 										<option value="2">$400-$700</option>
 										<option value="3">$700-$1000</option>
@@ -155,7 +157,7 @@
 				</div>
 			</div>
 			<div class="hero__bg-image">
-				<picture><source media="(max-width: 600px)" srcset="./assets/img/hero/bg-600.webp" type="image/webp"><source media="(max-width: 1200px)" srcset="./assets/img/hero/bg-1200.webp" type="image/webp"><img alt="bg image"  src="./assets/img/hero/bg.webp" ></picture>
+				<img src="./assets/img/hero/bg.png" alt="bg image" data-fls-image-ignore="">
 			</div>
 		</div>
 	</section>
@@ -175,14 +177,14 @@
 				<div class="items-real-estate__item-wr">
 					<div class="items-real-estate__item">
 						<a href="#" class="items-real-estate__image">
-							<picture><source media="(max-width: 600px)" srcset="./assets/img/discover/01-600.webp" type="image/webp"><source media="(max-width: 1200px)" srcset="./assets/img/discover/01-1200.webp" type="image/webp"><img alt="Real estate image"  src="./assets/img/discover/01.webp" ></picture>
+							<img src="./assets/img/discover/01.jpg" alt="Real estate image" data-fls-image-ignore="">
 						</a>
 						<a href="#" class="items-real-estate__title">
 							<h3>Perum griya asri</h3>
 						</a>
 						<div class="items-real-estate__location">Bogor, Jawa Barat</div>
 						<div class="items-real-estate__values">
-							<div href="#" class="items-real-estate__price">$25,000</div>
+							<div class="items-real-estate__price">$25,000</div>
 							<div class="items-real-estate__area"><span>360m<sup>2</sup></span> Living Area</div>
 						</div>
 						<a href="#" class="items-real-estate__button button button--border">Send Inquiry</a>
@@ -191,14 +193,14 @@
 				<div class="items-real-estate__item-wr">
 					<div class="items-real-estate__item">
 						<a href="#" class="items-real-estate__image">
-							<picture><source media="(max-width: 600px)" srcset="./assets/img/discover/02-600.webp" type="image/webp"><source media="(max-width: 1200px)" srcset="./assets/img/discover/02-1200.webp" type="image/webp"><img alt="Real estate image"  src="./assets/img/discover/02.webp" ></picture>
+							<img src="./assets/img/discover/02.jpg" alt="Real estate image" data-fls-image-ignore="">
 						</a>
 						<a href="#" class="items-real-estate__title">
 							<h3>Perum kencana asri</h3>
 						</a>
 						<div class="items-real-estate__location">Bogor, Jawa Barat</div>
 						<div class="items-real-estate__values">
-							<div href="#" class="items-real-estate__price">$35,000</div>
+							<div class="items-real-estate__price">$35,000</div>
 							<div class="items-real-estate__area"><span>360m<sup>2</sup></span> Living Area</div>
 						</div>
 						<a href="#" class="items-real-estate__button button button--border">Send Inquiry</a>
@@ -207,14 +209,14 @@
 				<div class="items-real-estate__item-wr">
 					<div class="items-real-estate__item">
 						<a href="#" class="items-real-estate__image">
-							<picture><source media="(max-width: 600px)" srcset="./assets/img/discover/03-600.webp" type="image/webp"><source media="(max-width: 1200px)" srcset="./assets/img/discover/03-1200.webp" type="image/webp"><img alt="Real estate image"  src="./assets/img/discover/03.webp" ></picture>
+							<img src="./assets/img/discover/03.jpg" alt="Real estate image" data-fls-image-ignore="">
 						</a>
 						<a href="#" class="items-real-estate__title">
 							<h3>Perum rakjel elit</h3>
 						</a>
 						<div class="items-real-estate__location">Bogor, Jawa Barat</div>
 						<div class="items-real-estate__values">
-							<div href="#" class="items-real-estate__price">$40,000</div>
+							<div class="items-real-estate__price">$40,000</div>
 							<div class="items-real-estate__area"><span>360m<sup>2</sup></span> Living Area</div>
 						</div>
 						<a href="#" class="items-real-estate__button button button--border">Send Inquiry</a>
@@ -279,7 +281,7 @@
 		<div class="about__container" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3">
 			<div class="about__statistics statistics-about">
 				<div class="statistics-about__image">
-					<picture><source media="(max-width: 600px)" srcset="./assets/img/about/image-600.webp" type="image/webp"><source media="(max-width: 1200px)" srcset="./assets/img/about/image-1200.webp" type="image/webp"><img alt="Image"  src="./assets/img/about/image.webp" ></picture>
+					<img src="./assets/img/about/image.jpg" alt="Image">
 				</div>
 				<div class="statistics-about__reviews-card reviews-card">
 					<img src="./assets/img/icons/check.svg" class="reviews-card__icon" alt="check icon">
@@ -330,7 +332,7 @@
 							<p>We wish to express our thanks for your hard work in finding us a temporary home, which proved to be exactly what we wanted.</p>
 						</div>
 						<div class="items-testimonials__bottom">
-							<picture><source media="(max-width: 600px)" srcset="./assets/img/testimonials/avatars/01-600.webp" type="image/webp"><source media="(max-width: 1200px)" srcset="./assets/img/testimonials/avatars/01-1200.webp" type="image/webp"><img class="items-testimonials__avatar" alt="avatar"  src="./assets/img/testimonials/avatars/01.webp" ></picture>
+							<img src="./assets/img/testimonials/avatars/01.jpg" class="items-testimonials__avatar" data-fls-image-ignore="" alt="avatar">
 							<div class="items-testimonials__from-whom">
 								<div class="items-testimonials__name">Jaydon Aminoff</div>
 								<div class="items-testimonials__position">UX Designer</div>
@@ -346,7 +348,7 @@
 							<p>My wife and I had a dream of downsizing from our house in Cape Elizabeth into a small condo closer to where we work and play in Portland. </p>
 						</div>
 						<div class="items-testimonials__bottom">
-							<picture><source media="(max-width: 600px)" srcset="./assets/img/testimonials/avatars/02-600.webp" type="image/webp"><source media="(max-width: 1200px)" srcset="./assets/img/testimonials/avatars/02-1200.webp" type="image/webp"><img class="items-testimonials__avatar" alt="avatar"  src="./assets/img/testimonials/avatars/02.webp" ></picture>
+							<img src="./assets/img/testimonials/avatars/02.jpg" class="items-testimonials__avatar" data-fls-image-ignore="" alt="avatar">
 							<div class="items-testimonials__from-whom">
 								<div class="items-testimonials__name">Alfredo Donin</div>
 								<div class="items-testimonials__position">UI Designer</div>
@@ -362,7 +364,7 @@
 							<p>After working with David to sell my home in 2013, I was convinced that he’s the only realtor I’ll ever need. Since then, I’ve bought two properties and sold one.</p>
 						</div>
 						<div class="items-testimonials__bottom">
-							<picture><source media="(max-width: 600px)" srcset="./assets/img/testimonials/avatars/03-600.webp" type="image/webp"><source media="(max-width: 1200px)" srcset="./assets/img/testimonials/avatars/03-1200.webp" type="image/webp"><img class="items-testimonials__avatar" alt="avatar"  src="./assets/img/testimonials/avatars/03.webp" ></picture>
+							<img src="./assets/img/testimonials/avatars/03.jpg" class="items-testimonials__avatar" data-fls-image-ignore="" alt="avatar">
 							<div class="items-testimonials__from-whom">
 								<div class="items-testimonials__name">Makenna Korsgaard</div>
 								<div class="items-testimonials__position">UX Researcher</div>
@@ -380,7 +382,7 @@
 	<div class="footer__container">
 		<div class="footer__main main-footer">
 			<div class="main-footer__logo">
-				<a href="#" data-fls-logo="" class="main-footer__logo-link logo">
+				<a href="#" data-fls-logo="" data-fls-scrollto=".hero" class="main-footer__logo-link logo">
 	<img src="./assets/img/logo.svg" class="logo__icon" alt="Image">
 	<span>Mulih</span>
 </a>
@@ -388,7 +390,7 @@
 			<div class="main-footer__text">We have built our reputation as true local area experts.</div>
 			<div class="main-footer__label">Newsletter</div>
 			<form data-fls-form="dev" action="files/sendmail/sendmail.php" method="POST" class="main-footer__form">
-				<input required="" type="email" name="form[email]" data-fls-form-errtext="Error" placeholder="Input your email" class="main-footer__input input" data-fls-input="">
+				<input required="" type="email" name="form[email]" data-fls-form-errtext="Enter the correct email" placeholder="Input your email" class="main-footer__input input" data-fls-input="">
 				<button type="submit" class="main-footer__button button">Send</button>
 			</form>
 		</div>
